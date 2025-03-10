@@ -1,5 +1,5 @@
-import { Log } from "../entities/Log";
+import { ILog } from "../entities/ILog";
 
 export interface IGetLogsUseCase {
-    execute(filters: Partial<Log>): Promise<Log[]>;
+    execute(filters: Partial<ILog>): Promise<ILog[]>;
 }

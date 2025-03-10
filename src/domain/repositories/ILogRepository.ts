@@ -1,6 +1,6 @@
-import { Log } from "../entities/Log";
+import { ILog } from "../entities/ILog";
 
 export interface ILogRepository {
-    save(log: Log): Promise<void>;
-    findAll(filters?: Partial<Log>): Promise<Log[]>;
+    save(log: ILog): Promise<void>;
+    findAll(filters?: Partial<ILog>): Promise<ILog[]>;
   }
